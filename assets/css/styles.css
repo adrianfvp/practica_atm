@@ -53,3 +53,16 @@
   #root, #__next {
     isolation: isolate;
   }
+
+:root{
+    --yellow: #FBE45A;
+    --soft-grey: #F4F4F4;
+    --soft-yellow: #fcf5cb; 
+  }
+
+body {
+  background-color: var(--yellow);
+  display: grid;
+  place-content: center;
+  font-family: 'Poppins', sans-serif;
+}
