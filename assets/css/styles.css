@@ -55,13 +55,13 @@
   }
 
 :root{
-    --yellow: #FBE45A;
+    --purple: #b55fb5;
     --soft-grey: #F4F4F4;
-    --soft-yellow: #fcf5cb; 
+    --soft-purple: #f5b5ed; 
   }
 
 body {
-  background-color: var(--yellow);
+  background-color: var(--soft-purple);
   display: grid;
   place-content: center;
   font-family: 'Poppins', sans-serif;
