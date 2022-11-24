@@ -2,6 +2,7 @@
 .titulo {
     width: 150px;
     margin: auto;
+    margin-top: 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -11,8 +12,6 @@
     width: 100px;
 }
 
-.titulo h1{
-}
 
 .login {
     width: 400px;

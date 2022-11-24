@@ -62,7 +62,12 @@
 
 body {
   background-color: var(--soft-purple);
-  display: grid;
-  place-content: center;
   font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
