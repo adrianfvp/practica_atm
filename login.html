@@ -12,12 +12,14 @@
         <div class="titulo">
             <img src="./assets/iconos/banco.png" alt="icono_banco">
             <h2>ATM BANK</h2>
+        </div>
     </header>
     <main>
         </div>
-        <div class="login">
+        <div class="loginDesign">
             <h2>Ingresa tus datos</h2>
-            <form>
+            <strong id="errorLogin" class="error hidden">Datos incorrectos</strong>
+                <form id="login">
                 <input type="email" placeholder="Email" name="email"/>
                 <input type="password" placeholder="Contraseña" name="password">
                 <button>Ingresar</button>
@@ -25,5 +27,6 @@
         </div>
        
     </main>
+    <script src="./assets/js/login.js" defer type="module"></script>
 </body>
 </html>

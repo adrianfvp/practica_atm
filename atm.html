@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/atm.css">
+    <title>ATM</title>
+</head>
+<body>
+    <div class="atm">
+        <header>
+            <h1 id="saludoUsuario">Hola</h1>
+            <small>Selecciona una opción</small>
+        </header>
+        <main class="parrilla">
+            <div class="main_options">
+                <button id="retiros" class="button-master border-radius_top">
+                    <span>💸</span>
+                    <p>Retiros</p>
+                </button>
+                <button id="depositos" class="button-master border-radius_bottom">
+                    <span>💰</span>
+                    <p>Depositos</p>
+                </button>
+            </div>
+            <div class="second_options">
+                <button id="saldo" class="button-secondary">Consultar saldo</button>
+                <button id="movimientos" class="button-secondary">Movimientos</button>
+                <button class="button-secondary border-radius_right">Cambiar clave</button>
+                <button id="salir" class="button-secondary">Salir</button>
+                <button class="button-secondary">Imprimir recibo</button>
+                <button class="button-secondary border-radius_left">Transferencias</button>
+            </div>
+        </main>
+    </div>
+
+    <div id="modal">
+        <span>x</span>
+        <h5>Modal chido</h5>
+    </div>
+
+    <div id="backdrop"></div>
+</body>
+</html>

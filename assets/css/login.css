@@ -6,6 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .titulo img {
@@ -13,7 +14,7 @@
 }
 
 
-.login {
+.loginDesign {
     width: 400px;
     background-color: var(--soft-grey);
     padding: 1.6rem;
@@ -25,7 +26,7 @@
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
-.login button{
+.loginDesign button{
     width: 100%;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -36,18 +37,18 @@
     color:  white;
 }
 
-.login button:hover{
+.loginDesign button:hover{
     background-color: #904c90;
     cursor: pointer;
 }
 
-.login h2 {
+.loginDesign h2 {
     text-align: center;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
-.login input {
+.loginDesign input {
     width: 100%;
     margin-bottom: 10px;
     border-radius: 1rem;
@@ -56,7 +57,18 @@
     border: 1px solid var(--soft-purple);
 }
 
-.login input:hover {
+.loginDesign input:hover {
     border: 1px solid var(--soft-purple);
     background-color: rgb(235, 232, 232);
+}
+
+.error {
+    text-align: center;
+    margin: auto;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    visibility: hidden;
 }

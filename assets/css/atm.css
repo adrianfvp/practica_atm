@@ -1,0 +1,202 @@
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+:root{
+    --purple: #b55fb5;
+    --soft-grey: #F4F4F4;
+    --soft-purple: #f5b5ed; 
+  }
+
+body {
+  background-color: var(--soft-purple);
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.atm {
+    background-color: var(--soft-grey);
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+h1{
+    font-size: 3.2rem;
+    line-height: 1.1;
+    color: var(--purple)
+}
+
+small{
+    font-weight: 600;
+}
+
+main {
+    max-width: 1280px;
+    padding: 1.6rem;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+}
+
+header {
+    margin-left: 2rem;
+}
+
+header h1{
+    margin: 0;
+    font-size: 3.2rem;
+    line-height: 1.1;
+}
+
+#backdrop {
+    position: absolute;
+    height: 100vh;
+    width: 100vh;
+    background-color: var(--soft-grey);
+
+    display: none;
+    z-index: 10;
+}
+
+.border-radius_top {
+    border-radius: 1rem 0 0 0;
+}
+
+.border-radius_bottom {
+    border-radius: 0 0 0 1rem;
+}
+
+.border-radius_left {
+    border-radius: 0 0 1rem 0;
+}
+
+.border-radius_right {
+    border-radius: 0 1rem 0 0;
+}
+
+.main_options {
+    height: 18.75rem;
+    width: 18,75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-master {
+    color: var(--purple);
+    font-size: 1.5rem;
+    font-weight: 900;
+    border: 1px solid #904c90;
+    width: 100%;
+    height: calc(100% / 2);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--soft-purple);
+}
+
+button:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+
+button:active {
+    background-color: #904c90;
+    color: white;
+}
+
+.button-master p{
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.second_options{
+    height: 18.75rem;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, calc(100% / 2));
+}
+
+.button-secondary {
+    color: var(--purple);
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: 1px solid #904c90;
+}
+
+#modal {
+    position: fixed;
+    min-width: 500px;
+    min-height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    z-index: 100;
+    color: var(--purple);
+    text-align: center;
+    display: none;
+}
+
+#modal div{
+    display: flex;
+    flex-direction: colunn;
+}
+
