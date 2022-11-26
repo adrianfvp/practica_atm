@@ -6,7 +6,11 @@ const usuariosBD = [
         cuenta: 1,
         password: 'Ga1234',
         saldo: 950,
-        log: []
+        log: [{
+            fecha: new Date(),
+                monto: 100,
+                type: 'deposito'
+        }]
     },
     {
         nombre: 'Alexa Perez',
@@ -14,7 +18,11 @@ const usuariosBD = [
         cuenta: 2,
         password: 'Ap1234',
         saldo: 500,
-        log: []
+        log: [{
+            fecha: new Date(),
+                monto: 100,
+                type: 'deposito'
+        }]
     },
     {
         nombre: 'Camila Catro',
