@@ -1,10 +1,10 @@
 
 const usuariosBD = [
     {
-        nombre: 'Juan Fernando',
-        email: 'juanfer@email.com',
+        nombre: 'Gabriel Arango',
+        email: 'gabrielar@email.com',
         cuenta: 1,
-        password: 'Jf1234',
+        password: 'Ga1234',
         saldo: 950,
         log: []
     },
@@ -52,7 +52,7 @@ form.addEventListener('submit', (e) => {
     for (const usuarioBD of usuariosBD) {
         const { email, password, ...restOfElements } = usuarioBD
         if (email === loginEmail && password === loginPassword) {
-            window.localStorage.setItem('user', JSON.stringify({...restOfElements, email}))
+            window.sessionStorage.setItem('currentUser', JSON.stringify({...restOfElements, email}))
             window.location.href = './atm.html'
             break; 
         } else {
